@@ -24,15 +24,17 @@ def multiple(a, b):
 def devide(a, b):
     return a / b
 
+# Phương pháp cùi bắp
+def sort(arr):
+    for i in range(0, len(arr) - 1):
+        for j in range(i + 1, len(arr) - 1):
+            if arr[i] > arr[j]:
+                tmp = arr[i]
+                arr[i] = arr[j]
+                arr[j] = tmp
 
-def sort(array):
-    for i in range(0, len(array) - 1):
-        for j in range(i + 1, len(array) - 1):
-            if array[i] > array[j]:
-                tmp = array[i]
-                array[i] = array[j]
-                array[j] = tmp
-
+def quicksort(arr):
+    
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
