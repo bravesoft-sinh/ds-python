@@ -2,7 +2,7 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-from sort import quickSort, mergeSort, printList
+from sort import quickSort, mergeSort, printList, selectionSort
 
 
 def print_hi(name):
@@ -28,15 +28,34 @@ def devide(a, b):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    # quicksort
     array = [1, 2, 4, 6, 8, 3, 9, 4, 3, 5, 7, 4, 8, 9]
     print("Given array is", end="\n")
     printList(array)
     quickSort(array, 0, len(array) - 1)
     print("Sorted array is: ", end="\n")
     printList(array)
-    arr = [12, 11, 13, 5, 6, 7]
+
+    # merge sort
+    array = [1, 2, 4, 6, 8, 3, 9, 4, 3, 5, 7, 4, 8, 9]
     print("Given array is", end="\n")
-    printList(arr)
-    mergeSort(arr)
+    printList(array)
+    mergeSort(array)
     print("Sorted array is: ", end="\n")
-    printList(arr)
+    printList(array)
+
+    # selection sort
+    array = [1, 2, 4, 6, 8, 3, 9, 4, 3, 5, 7, 4, 8, 9]
+    print("Given array is", end="\n")
+    printList(array)
+    selectionSort(array)
+    print("Sorted array is: ", end="\n")
+    printList(array)
+
+    # insertion sort
+    array = [1, 2, 4, 6, 8, 3, 9, 4, 3, 5, 7, 4, 8, 9]
+    print("Given array is", end="\n")
+    printList(array)
+    selectionSort(array)
+    print("Sorted array is: ", end="\n")
+    printList(array)

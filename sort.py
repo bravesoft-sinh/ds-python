@@ -57,8 +57,8 @@ def mergeSort(arr):
 
 
 def selectionSort(arr):
-    min_ele_index = 0
     for i in range(0, len(arr) - 1):
+        min_ele_index = i
         for j in range(i + 1, len(arr)):
             if arr[j] < arr[min_ele_index]:
                 min_ele_index = j
@@ -67,6 +67,17 @@ def selectionSort(arr):
             arr[i], arr[min_ele_index] = arr[min_ele_index], arr[i]
 
     return arr
+
+
+def insertionSort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j > 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+
 
 def printList(arr):
     for i in range(len(arr)):
