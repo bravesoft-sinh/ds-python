@@ -2,7 +2,8 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-from sort import quickSort, mergeSort, printList, selectionSort
+from sort import quickSort, mergeSort, selectionSort
+from util import printList
 
 
 def print_hi(name):
