@@ -64,16 +64,17 @@ def nested_loop():
         [0]
     ]
 
-    for row in range(mat):
-        for element in range(row):
+    for row in mat:
+        print(row)
+        for element in row:
             print(element)
 
 
-matrix()
 nested_loop()
-user_input()
+matrix()
 conditional(10)
 tuples()
 dictionary()
 for_loop(10)
 while_loop(10)
+
