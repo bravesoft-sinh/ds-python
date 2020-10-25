@@ -44,6 +44,19 @@ def for_loop(n):
     print(count)
 
 
+def matrix():
+    mat = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [0]
+    ]
+    print(mat)
+    print(mat[1])
+    print(mat[0][2])
+
+
+matrix()
 user_input()
 conditional(10)
 tuples()
