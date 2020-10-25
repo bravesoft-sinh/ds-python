@@ -70,6 +70,18 @@ def nested_loop():
             print(element)
 
 
+def translate(pharse):
+    translation = ""
+    for letter in pharse:
+        if letter.lower() in "aeiou":
+            translation = translation + "g"
+        else:
+            translation = translation + letter
+
+    return translation
+
+
+print(translate(input("Enter your pharse: ")))
 nested_loop()
 matrix()
 conditional(10)
@@ -77,4 +89,3 @@ tuples()
 dictionary()
 for_loop(10)
 while_loop(10)
-
