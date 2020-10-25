@@ -56,7 +56,21 @@ def matrix():
     print(mat[0][2])
 
 
+def nested_loop():
+    mat = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [0]
+    ]
+
+    for row in range(mat):
+        for element in range(row):
+            print(element)
+
+
 matrix()
+nested_loop()
 user_input()
 conditional(10)
 tuples()
