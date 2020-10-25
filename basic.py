@@ -44,7 +44,46 @@ def for_loop(n):
     print(count)
 
 
-user_input()
+def matrix():
+    mat = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [0]
+    ]
+    print(mat)
+    print(mat[1])
+    print(mat[0][2])
+
+
+def nested_loop():
+    mat = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+        [0]
+    ]
+
+    for row in mat:
+        print(row)
+        for element in row:
+            print(element)
+
+
+def translate(pharse):
+    translation = ""
+    for letter in pharse:
+        if letter.lower() in "aeiou":
+            translation = translation + "g"
+        else:
+            translation = translation + letter
+
+    return translation
+
+
+print(translate(input("Enter your pharse: ")))
+nested_loop()
+matrix()
 conditional(10)
 tuples()
 dictionary()
